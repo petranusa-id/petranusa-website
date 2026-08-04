@@ -20,7 +20,7 @@ export default function NotFound() {
 
         <p className="mt-6 text-gray-600">
 
-          The page you are looking for doesn't exist.
+          The page you are looking for doesn&apos;t exist.
 
         </p>
 
