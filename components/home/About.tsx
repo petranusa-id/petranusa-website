@@ -1,93 +1,98 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
+  return (
+    <section className="py-28 bg-white">
 
-    return (
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
-<section className="py-28 bg-white">
+        <div className="relative">
 
-<div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 px-6">
+          <Image
+            src="/images/about.jpg"
+            alt="About Petranusa"
+            width={650}
+            height={700}
+            className="rounded-3xl shadow-2xl"
+          />
 
-<div>
+        </div>
 
-<Image
-src="/images/about.jpg"
-alt="Training"
-width={700}
-height={700}
-className="rounded-3xl shadow-2xl"
-/>
+        <div>
 
-</div>
+          <span className="text-green-600 uppercase font-semibold tracking-[4px]">
+            About Us
+          </span>
 
-<div>
+          <h2 className="text-5xl font-bold mt-6 leading-tight">
 
-<span className="text-green-600 font-semibold">
+            Building Professional Competence Since 2003
 
-ABOUT PETRANUSA
+          </h2>
 
-</span>
+          <p className="mt-8 text-gray-600 leading-9">
 
-<h2 className="text-5xl font-bold mt-4">
+            PT. Petratama Abdi Nusa established a professional
+            legal entity in 2003 based in Jakarta.
 
-Trusted Professional Development Partner
+            We provide Certification,
+            In House Training,
+            Consultancy,
+            and Public Course
+            for Indonesia's energy and industrial sectors.
 
-</h2>
+          </p>
 
-<p className="mt-8 text-lg text-gray-600 leading-9">
+          <div className="grid grid-cols-2 gap-10 mt-12">
 
-PT. Petratama Abdi Nusa established in 2003
-and has become one of Indonesia's trusted providers
-of Certification, Consultancy,
-In House Training and Public Courses.
+            <div>
 
-</p>
+              <h3 className="font-bold text-xl">
 
-<div className="grid grid-cols-2 gap-8 mt-12">
+                Vision
 
-<div>
+              </h3>
 
-<h3 className="font-bold text-xl">
+              <p className="mt-4 text-gray-600">
 
-Vision
+                Effective and practical business solutions.
 
-</h3>
+              </p>
 
-<p className="text-gray-600 mt-3">
+            </div>
 
-Provide effective,
-competitive and practical
-business solutions.
+            <div>
 
-</p>
+              <h3 className="font-bold text-xl">
 
-</div>
+                Mission
 
-<div>
+              </h3>
 
-<h3 className="font-bold text-xl">
+              <p className="mt-4 text-gray-600">
 
-Mission
+                Trusted partner in professional competency development.
 
-</h3>
+              </p>
 
-<p className="text-gray-600 mt-3">
+            </div>
 
-Become Indonesia's leading
-professional training partner.
+          </div>
 
-</p>
+          <Link
+            href="/about"
+            className="inline-block mt-12 bg-green-600 text-white px-8 py-4 rounded-xl"
+          >
 
-</div>
+            Learn More
 
-</div>
+          </Link>
 
-</div>
+        </div>
 
-</div>
+      </div>
 
-</section>
-
-);
-
+    </section>
+  );
 }
