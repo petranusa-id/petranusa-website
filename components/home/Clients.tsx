@@ -1,27 +1,38 @@
 "use client";
 
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Autoplay } from "swiper/modules";
 
+import "swiper/css";
+
 import { clients } from "@/data/clients";
 
-export default function Clients() {
+export default function Clients(){
 
-return (
+return(
 
 <section className="py-24 bg-white">
 
 <div className="max-w-7xl mx-auto px-6">
 
-<h2 className="text-center text-4xl font-bold">
+<div className="text-center">
+
+<h2 className="text-5xl font-bold">
 
 Trusted By
 
 </h2>
+
+<p className="mt-4 text-gray-600">
+
+National and International Companies
+
+</p>
+
+</div>
 
 <Swiper
 
@@ -29,9 +40,9 @@ modules={[Autoplay]}
 
 slidesPerView={5}
 
-spaceBetween={40}
-
 loop
+
+speed={4500}
 
 autoplay={{
 
@@ -41,7 +52,9 @@ disableOnInteraction:false,
 
 }}
 
-speed={4000}
+spaceBetween={40}
+
+className="mt-20"
 
 >
 
@@ -55,13 +68,13 @@ clients.map((logo)=>(
 
 src={logo}
 
-alt="client"
+alt="Client"
 
-width={180}
+width={170}
 
 height={80}
 
-className="object-contain grayscale hover:grayscale-0 transition"
+className="grayscale hover:grayscale-0 transition mx-auto"
 
 />
 
