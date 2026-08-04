@@ -10,3 +10,4 @@ export const clients = [
   "/clients/skkmigas.png",
   "/clients/pii.png",
 ];
+public/clients/
