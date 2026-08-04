@@ -10,7 +10,7 @@ return(
 
 <h2 className="text-5xl font-bold leading-tight">
 
-Ready to Improve Your Organization's Competency?
+Ready to Improve Your Organization&apos;s Competency?
 
 </h2>
 
