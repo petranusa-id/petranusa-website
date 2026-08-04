@@ -1,34 +1,36 @@
-export const services = [
+import { Service } from "@/types/service";
+
+export const services: Service[] = [
   {
     id: 1,
     title: "Certification",
-    icon: "BadgeCheck",
+    slug: "certification",
+    icon: "Award",
     description:
-      "Professional competency certification aligned with national and international standards.",
-    link: "/certification",
+      "Professional competency certification programs.",
   },
   {
     id: 2,
     title: "In House Training",
+    slug: "in-house-training",
     icon: "GraduationCap",
     description:
-      "Customized corporate training programs designed for organizational development.",
-    link: "/training",
+      "Customized training tailored to company needs.",
   },
   {
     id: 3,
     title: "Consultancy",
+    slug: "consultancy",
     icon: "BriefcaseBusiness",
     description:
-      "Technical and management consultancy delivered by experienced professionals.",
-    link: "/consultancy",
+      "Engineering and management consulting services.",
   },
   {
     id: 4,
     title: "Public Course",
+    slug: "public-course",
     icon: "BookOpen",
     description:
-      "Open enrollment courses covering engineering, leadership, HSE, and business topics.",
-    link: "/public-course",
+      "Open enrollment professional courses.",
   },
 ];
