@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 import { gallery } from "@/data/gallery";
@@ -8,15 +6,25 @@ export default function Gallery(){
 
 return(
 
-<section className="py-28 bg-slate-50">
+<section className="bg-slate-50 py-28">
 
 <div className="max-w-7xl mx-auto px-6">
 
-<h2 className="text-5xl font-bold text-center">
+<div className="text-center">
+
+<h2 className="text-5xl font-bold">
 
 Training Gallery
 
 </h2>
+
+<p className="mt-5 text-gray-600">
+
+Moments from our professional training activities.
+
+</p>
+
+</div>
 
 <div className="grid md:grid-cols-3 gap-8 mt-20">
 
@@ -28,7 +36,7 @@ gallery.map((item)=>(
 
 key={item}
 
-className="overflow-hidden rounded-3xl shadow-xl"
+className="overflow-hidden rounded-3xl"
 
 >
 
@@ -38,9 +46,9 @@ src={item}
 
 alt="Gallery"
 
-width={600}
+width={700}
 
-height={450}
+height={500}
 
 className="hover:scale-110 transition duration-700"
 
