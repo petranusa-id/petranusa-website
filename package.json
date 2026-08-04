@@ -25,3 +25,4 @@
     "eslint": "^9"
   }
 }
+"react-countup": "^6.5.3"
