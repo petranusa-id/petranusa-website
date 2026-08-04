@@ -1,17 +1,11 @@
-export default function robots(){
+import { MetadataRoute } from "next";
 
-return{
-
-rules:{
-
-userAgent:"*",
-
-allow:"/",
-
-},
-
-sitemap:"https://petranusa.my.id/sitemap.xml",
-
-};
-
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: "https://petranusa.my.id/sitemap.xml",
+  };
 }
