@@ -40,7 +40,7 @@ export default function About() {
             In House Training,
             Consultancy,
             and Public Course
-            for Indonesia's energy and industrial sectors.
+            for Indonesia&apos;s energy and industrial sectors.
 
           </p>
 
