@@ -1,0 +1,21 @@
+import { Metadata } from "next";
+
+export function createMetadata(
+  title: string,
+  description: string
+): Metadata {
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
