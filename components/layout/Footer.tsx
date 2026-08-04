@@ -1,159 +1,116 @@
-PT. Petratama Abdi Nusa
+import Link from "next/link";
 
-Office I
+export default function Footer(){
 
-Office II
+return(
+
+<footer className="bg-slate-950 text-white">
+
+<div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-4 gap-12">
+
+<div>
+
+<h2 className="text-3xl font-bold">
+
+PT. Petratama
+Abdi Nusa
+
+</h2>
+
+<p className="mt-5 text-slate-400 leading-8">
+
+Professional Certification,
+Training,
+Consultancy
+and Public Course
+since 2003.
+
+</p>
+
+</div>
+
+<div>
+
+<h3 className="font-bold">
 
 Quick Links
 
-Certification
+</h3>
 
-Training
+<div className="space-y-3 mt-5">
 
-Consultancy
+<Link href="/about">About</Link><br/>
 
-Public Course
+<Link href="/services">Services</Link><br/>
 
-Email
+<Link href="/gallery">Gallery</Link><br/>
+
+<Link href="/contact">Contact</Link>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 className="font-bold">
+
+Contact
+
+</h3>
+
+<p className="mt-5">
+
++62 21 7919 7673
+
+</p>
+
+<p>
 
 pan@petranusa.co.id
 
-Instagram
+</p>
+
+<p>
 
 @petranusa.id
 
-Copyright © 2026
-import Link from "next/link";
-import {
-  Phone,
-  Mail,
-  MapPin,
-  Instagram,
-} from "lucide-react";
+</p>
 
-export default function Footer() {
-  return (
-    <footer className="bg-slate-950 text-white">
+</div>
 
-      <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-4 gap-14">
+<div>
 
-        <div>
+<h3 className="font-bold">
 
-          <h2 className="text-3xl font-bold">
+Office
 
-            PT. Petratama
-            <br />
-            Abdi Nusa
+</h3>
 
-          </h2>
+<p className="mt-5 text-slate-400">
 
-          <p className="mt-6 text-slate-400 leading-8">
+Office I
 
-            Trusted partner in Certification,
-            In House Training,
-            Consultancy,
-            and Public Course
-            since 2003.
+<br/>
 
-          </p>
+Jl. Komplek Rukan Buncit Mas BB-3
 
-        </div>
+Jakarta Selatan
 
-        <div>
+</p>
 
-          <h3 className="font-bold text-xl">
+</div>
 
-            Services
+</div>
 
-          </h3>
+<div className="border-t border-slate-800 text-center py-8 text-slate-500">
 
-          <div className="mt-6 space-y-3">
+© 2026 PT. Petratama Abdi Nusa
 
-            <Link href="/certification">Certification</Link><br/>
+</div>
 
-            <Link href="/training">In House Training</Link><br/>
+</footer>
 
-            <Link href="/consultancy">Consultancy</Link><br/>
+);
 
-            <Link href="/public-course">Public Course</Link>
-
-          </div>
-
-        </div>
-
-        <div>
-
-          <h3 className="font-bold text-xl">
-
-            Contact
-
-          </h3>
-
-          <div className="space-y-5 mt-6">
-
-            <div className="flex gap-3">
-
-              <Phone size={18}/>
-
-              +62 21 7919 7673
-
-            </div>
-
-            <div className="flex gap-3">
-
-              <Mail size={18}/>
-
-              pan@petranusa.co.id
-
-            </div>
-
-            <div className="flex gap-3">
-
-              <Instagram size={18}/>
-
-              @petranusa.id
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div>
-
-          <h3 className="font-bold text-xl">
-
-            Office
-
-          </h3>
-
-          <div className="mt-6 flex gap-3">
-
-            <MapPin size={18}/>
-
-            <p className="text-slate-400">
-
-              Office I
-              <br/>
-
-              Jl. Komplek Rukan Buncit Mas BB-3
-              Jakarta Selatan
-
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div className="border-t border-slate-800 py-8 text-center text-slate-500">
-
-        © 2026 PT. Petratama Abdi Nusa.
-        All Rights Reserved.
-
-      </div>
-
-    </footer>
-  );
 }
