@@ -27,3 +27,30 @@ export default function RootLayout({
     </html>
   );
 }
+export const metadata = {
+
+title:"PT. Petratama Abdi Nusa",
+
+description:"Professional Certification, Training and Consultancy",
+
+keywords:[
+"Training",
+"Certification",
+"Consultancy",
+"Energy",
+"Oil and Gas",
+"Petranusa",
+"Jakarta",
+],
+
+openGraph:{
+
+title:"PT. Petratama Abdi Nusa",
+
+description:"Professional Training Partner",
+
+images:["/images/hero.jpg"],
+
+},
+
+};
