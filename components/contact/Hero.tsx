@@ -23,7 +23,7 @@ export default function ContactHero() {
           </h1>
 
           <p className="text-white mt-6 text-xl">
-            We'd love to hear from you.
+            We&apos;d love to hear from you.
           </p>
 
         </div>
