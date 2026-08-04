@@ -2,90 +2,62 @@
 
 import CountUp from "react-countup";
 
+const stats = [
+  {
+    number: 20,
+    suffix: "+",
+    label: "Years Experience",
+  },
+  {
+    number: 500,
+    suffix: "+",
+    label: "Training Programs",
+  },
+  {
+    number: 100000,
+    suffix: "+",
+    label: "Participants",
+  },
+  {
+    number: 50,
+    suffix: "+",
+    label: "Corporate Clients",
+  },
+];
+
 export default function Statistics() {
+  return (
+    <section className="bg-green-700 py-24">
 
-return (
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-center text-white">
 
-<section className="bg-green-700 py-24">
+        {stats.map((item) => (
 
-<div className="max-w-7xl mx-auto grid md:grid-cols-4 text-center text-white gap-10">
+          <div key={item.label}>
 
-<div>
+            <h2 className="text-6xl font-bold">
 
-<h2 className="text-6xl font-bold">
+              <CountUp
+                end={item.number}
+                duration={3}
+              />
 
-<CountUp end={20} duration={3}/>
+              {item.suffix}
 
-+
+            </h2>
 
-</h2>
+            <p className="mt-5">
 
-<p className="mt-3">
+              {item.label}
 
-Years Experience
+            </p>
 
-</p>
+          </div>
 
-</div>
+        ))}
 
-<div>
+      </div>
 
-<h2 className="text-6xl font-bold">
-
-<CountUp end={500} duration={3}/>
-
-+
-
-</h2>
-
-<p>
-
-Training Programs
-
-</p>
-
-</div>
-
-<div>
-
-<h2 className="text-6xl font-bold">
-
-<CountUp end={100000} duration={4}/>
-
-+
-
-</h2>
-
-<p>
-
-Participants
-
-</p>
-
-</div>
-
-<div>
-
-<h2 className="text-6xl font-bold">
-
-<CountUp end={50}/>
-
-+
-
-</h2>
-
-<p>
-
-Corporate Clients
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-);
-
+    </section>
+  );
 }
