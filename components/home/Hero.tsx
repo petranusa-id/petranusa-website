@@ -1,69 +1,59 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center overflow-hidden">
+    <section className="relative h-screen flex items-center">
 
-      {/* Background */}
+      <Image
+        src="/images/hero.jpg"
+        alt="Hero"
+        fill
+        priority
+        className="object-cover"
+      />
 
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-black/60"/>
 
-        <Image
-          src="/images/hero.jpg"
-          alt="Petranusa Training"
-          fill
-          priority
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-black/60" />
-
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
 
         <motion.div
-          initial={{ opacity: 0, y: 80 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: .8 }}
-          className="max-w-3xl"
+          initial={{opacity:0,y:40}}
+          animate={{opacity:1,y:0}}
+          transition={{duration:.8}}
         >
 
-          <span className="text-yellow-400 uppercase tracking-[6px] font-semibold">
+          <p className="uppercase tracking-[5px] text-yellow-400">
 
             Since 2003
 
-          </span>
+          </p>
 
-          <h1 className="mt-6 text-6xl md:text-7xl font-bold text-white leading-tight">
+          <h1 className="text-7xl font-bold text-white max-w-4xl leading-tight mt-6">
 
             Empowering Professionals Through
-
-            <span className="text-yellow-400">
-
-              {" "}Certification & Training
-
-            </span>
+            Certification &
+            Training
 
           </h1>
 
-          <p className="mt-8 text-xl text-gray-200 leading-9">
+          <p className="text-gray-200 text-xl mt-8 max-w-3xl leading-9">
 
             PT. Petratama Abdi Nusa is a trusted partner in
-            Certification, In House Training, Consultancy and
-            Public Course for Indonesia's Energy & Industrial Sector.
+            Certification,
+            In House Training,
+            Consultancy and Public Course.
 
           </p>
 
-          <div className="flex gap-5 mt-10">
+          <div className="flex gap-6 mt-10">
 
             <Link
               href="/services"
-              className="px-8 py-4 rounded-xl bg-green-600 hover:bg-green-700 transition text-white font-semibold"
+              className="bg-green-600 px-8 py-4 rounded-xl text-white"
             >
 
               Explore Services
@@ -72,7 +62,7 @@ export default function Hero() {
 
             <Link
               href="/contact"
-              className="px-8 py-4 rounded-xl border border-white text-white hover:bg-white hover:text-black transition"
+              className="border border-white px-8 py-4 rounded-xl text-white"
             >
 
               Contact Us
