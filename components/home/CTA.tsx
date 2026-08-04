@@ -16,7 +16,7 @@ Ready to Improve Your Organization&apos;s Competency?
 
 <p className="mt-8 text-xl">
 
-Let's discuss how Petranusa can support your organization.
+Let&apos;s discuss how Petranusa can support your organization.
 
 </p>
 
