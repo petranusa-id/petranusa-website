@@ -1,39 +1,27 @@
-export default function sitemap() {
+import { MetadataRoute } from "next";
 
-return[
+export default function sitemap(): MetadataRoute.Sitemap {
+  const base = "https://petranusa.my.id";
 
-{
-
-url:"https://petranusa.my.id",
-
-priority:1,
-
-},
-
-{
-
-url:"https://petranusa.my.id/about",
-
-},
-
-{
-
-url:"https://petranusa.my.id/services",
-
-},
-
-{
-
-url:"https://petranusa.my.id/gallery",
-
-},
-
-{
-
-url:"https://petranusa.my.id/contact",
-
-},
-
-];
-
+  return [
+    {
+      url: base,
+      priority: 1,
+    },
+    {
+      url: `${base}/about`,
+    },
+    {
+      url: `${base}/services`,
+    },
+    {
+      url: `${base}/gallery`,
+    },
+    {
+      url: `${base}/news`,
+    },
+    {
+      url: `${base}/contact`,
+    },
+  ];
 }
