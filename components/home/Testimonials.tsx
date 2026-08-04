@@ -60,7 +60,7 @@ className="rounded-3xl border p-10"
 
 <p className="italic">
 
-"{item.quote}"
+&quot;{item.quote}&quot;
 
 </p>
 
