@@ -1,24 +1,24 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
+import Link from "next/link";
 
-export default function FloatingWhatsApp() {
+export default function FloatingWhatsApp(){
 
 return(
 
-<a
+<Link
 
-href="https://wa.me/+6287780746660"
+href="https://wa.me/6287780746660"
 
 target="_blank"
 
-className="fixed bottom-8 right-8 bg-green-600 p-5 rounded-full shadow-2xl hover:scale-110 transition z-50"
+className="fixed bottom-8 left-8 bg-green-500 text-white px-5 py-4 rounded-full shadow-2xl z-50"
 
 >
 
-<MessageCircle className="text-white"/>
+WhatsApp
 
-</a>
+</Link>
 
 );
 
