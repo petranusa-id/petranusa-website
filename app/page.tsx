@@ -8,22 +8,14 @@ import CTA from "@/components/home/CTA";
 
 export default function HomePage() {
   return (
-    <main>
-
+    <>
       <Hero />
-
       <About />
-
       <Services />
-
       <Statistics />
-
       <Clients />
-
       <Gallery />
-
       <CTA />
-
-    </main>
+    </>
   );
 }
