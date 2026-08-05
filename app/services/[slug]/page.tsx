@@ -2,9 +2,9 @@ import { notFound } from "next/navigation";
 import { services } from "@/data/services";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export function generateStaticParams() {
