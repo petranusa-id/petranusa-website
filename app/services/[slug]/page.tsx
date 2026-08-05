@@ -13,9 +13,11 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ServiceDetailPage({ params }: Props) {
+export default async function ServiceDetailPage({ params }: Props) {
+  const { slug } = await params;
+
   const service = services.find(
-    (item) => item.slug === params.slug
+    (item) => item.slug === slug
   );
 
   if (!service) {
@@ -24,9 +26,7 @@ export default function ServiceDetailPage({ params }: Props) {
 
   return (
     <main className="py-24">
-
       <div className="max-w-5xl mx-auto px-6">
-
         <h1 className="text-5xl font-bold">
           {service.title}
         </h1>
@@ -34,9 +34,7 @@ export default function ServiceDetailPage({ params }: Props) {
         <p className="mt-8 text-lg leading-9 text-gray-600">
           {service.description}
         </p>
-
       </div>
-
     </main>
   );
 }
