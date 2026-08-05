@@ -2,9 +2,9 @@ import { notFound } from "next/navigation";
 import { news } from "@/data/news";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export function generateStaticParams() {
@@ -13,12 +13,10 @@ export function generateStaticParams() {
   }));
 }
 
-export default function NewsDetailPage({
-  params,
-}: Props) {
-  const article = news.find(
-    (item) => item.slug === params.slug
-  );
+export default async function NewsDetail({ params }: Props) {
+  const { slug } = await params;
+
+  const news = getNewsBySlug(slug);
 
   if (!article) {
     notFound();
