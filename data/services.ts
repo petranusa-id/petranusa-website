@@ -21,7 +21,7 @@ export const services: Service[] = [
     id: 3,
     title: "Consultancy",
     slug: "consultancy",
-    icon: "BriefcaseBusiness",
+    icon: "Briefcase",
     description:
       "Engineering and management consulting services.",
   },
