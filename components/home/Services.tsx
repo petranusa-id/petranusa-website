@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import {
+  Award,
   BadgeCheck,
   GraduationCap,
   BriefcaseBusiness,
@@ -12,6 +13,7 @@ import {
 import { services } from "@/data/services";
 
 const icons = {
+  Award,
   BadgeCheck,
   GraduationCap,
   BriefcaseBusiness,
