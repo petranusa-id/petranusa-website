@@ -16,20 +16,14 @@ className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/80 border-b 
 
 <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
-<Link href="/">
-
-<Image
-
-src="/logo/logo.png"
-
-alt="Petranusa"
-
-width={170}
-
-height={60}
-
-/>
-
+<Link href="/" className="flex items-center">
+  <Image
+    src="/logo.png"
+    alt="PT Petratama Abdi Nusa"
+    width={180}
+    height={50}
+    priority
+  />
 </Link>
 
 <nav className="hidden lg:flex gap-10 font-medium">
