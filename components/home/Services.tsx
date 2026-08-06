@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import {
   Award,
   BadgeCheck,
@@ -8,6 +10,8 @@ import {
   BookOpen,
   ArrowRight,
 } from "lucide-react";
+
+import { services } from "@/data/services";
 
 const icons = {
   Award,
