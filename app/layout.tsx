@@ -30,32 +30,36 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PT Petratama Abdi Nusa",
+  metadataBase: new URL("https://petranusa.my.id"),
+
+  title: {
+    default: "PT Petratama Abdi Nusa",
+    template: "%s | PT Petratama Abdi Nusa",
+  },
+
   description:
-    "Certification, Training, Consultancy and Public Course.",
+    "Certification, In House Training, Consultancy dan Public Course untuk industri migas, energi, dan profesional.",
 
   keywords: [
     "sertifikasi",
     "training",
     "consultancy",
-    "kursus",
-    "PT Petratama Abdi Nusa"
+    "migas",
+    "geothermal",
+    "PT Petratama Abdi Nusa",
   ],
 
   openGraph: {
     title: "PT Petratama Abdi Nusa",
     description:
-      "Certification, Training, Consultancy and Public Course.",
-
+      "Certification, Training & Consultancy.",
     url: "https://petranusa.my.id",
-
     siteName: "PT Petratama Abdi Nusa",
-
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630
+    images: ["/og-image.jpg"],
+    locale: "id_ID",
+    type: "website",
+  },
+};
       }
     ]
   }
