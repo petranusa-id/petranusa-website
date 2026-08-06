@@ -6,12 +6,14 @@ import Clients from "@/components/home/Clients";
 import Gallery from "@/components/home/Gallery";
 import Testimonials from "@/components/home/Testimonials";
 import FAQ from "@/components/home/FAQ";
-import DownloadCenter from "@/components/home/DownloadCenter";
 import TrainingCalendar from "@/components/home/TrainingCalendar";
+import DownloadCenter from "@/components/home/DownloadCenter";
 import CTA from "@/components/home/CTA";
 
 export const metadata = {
-  title: "Home",
+  title: "PT Petratama Abdi Nusa",
+  description:
+    "PT. Petratama Abdi Nusa is a trusted partner in Certification, In House Training, Consultancy and Public Course.",
 };
 
 export default function Home() {
